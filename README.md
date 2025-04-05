@@ -22,7 +22,7 @@
 @import url("https://cdn.jsdelivr.net/gh/sleeprince/noto-cjk@main/notoCJKkr.min.css");
 ```
 ## 보기
-- Noto Sans CJK kr
+### ✓ 본고딕 Noto Sans CJK kr
 ![NotoSans](https://github.com/user-attachments/assets/1104cba7-c855-4c58-8db9-0583c9723be2)
-- Noto Serif CJK kr
+### ✓ 본명조 Noto Serif CJK kr
 ![NotoSerif](https://github.com/user-attachments/assets/8ba3cf32-e81d-47cd-b901-69672e66cc7c)
