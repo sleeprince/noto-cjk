@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-story</title>
+    <link rel="stylesheet" href="notoCJK.css" />
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            height: 100dvh;
+            display: flex;            
+            justify-content: center;
+            align-items: center;
+        }
+        body > div{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+        #훈민정음{            
+            font-size: 2.2rem;
+            line-height: 3rem;
+            writing-mode: vertical-rl;
+            vertical-align: baseline;
+            border: 1px solid #ababab;
+            background-color: #ebebeb;
+        }
+        #buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: baseline;
+        }
+        #buttons:has(input#sans:checked) + #훈민정음{
+            font-family: 'Noto Sans CJK';
+        }       
+        #buttons:has(input#serif:checked) + #훈민정음{
+            font-family: 'Noto Serif CJK';
+        }        
+        .radio-button{
+            margin: 0.5em;
+        }
+        input[type="radio"]{
+            width: 1rem;
+            height: 1rem;
+            vertical-align: middle;
+        }
+        .combo-box{
+            font-size: 1rem;
+            height: 1.7rem;
+            margin: 0.5em;
+            margin-right: 0;
+            padding: 0.1em 0.4em;
+        }
+        option{
+            padding: 0.2em;
+        }
+        #buttons:has(input#sans:checked) option[value="600"]{
+            display: none;
+        }
+        #buttons:has(input#serif:checked) option[value="100"]{
+            display: none;
+        }
+        #buttons:has(option[value="100"]:checked) + #훈민정음{
+            font-weight: 100;
+        }
+        #buttons:has(option[value="200"]:checked) + #훈민정음{
+            font-weight: 200;
+        }
+        #buttons:has(option[value="300"]:checked) + #훈민정음{
+            font-weight: 300;
+        }
+        #buttons:has(option[value="400"]:checked) + #훈민정음{
+            font-weight: 400;
+        }
+        #buttons:has(option[value="500"]:checked) + #훈민정음{
+            font-weight: 600;
+        }
+        #buttons:has(option[value="700"]:checked) + #훈민정음{
+            font-weight: 700;
+        }
+        #buttons:has(option[value="900"]:checked) + #훈민정음{
+            font-weight: 900;
+        }
+        p{
+            border: 1px solid #ababab;
+            padding: 1.2rem 0.5rem;
+        }
+        span{
+            font-size: 0.75em;
+            vertical-align: super;
+            line-height: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="buttons">
+            <div class="radio-button">
+                <input name="font" type="radio" id="sans" checked />
+                <label for="sans">Noto Sans</label>
+            </div>
+            <div class="radio-button">
+                <input name="font" type="radio" id="serif" />
+                <label for="serif">Noto Serif</label>
+            </div>
+            <select class="combo-box">
+                <option value="400">weight</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                <option value="500">500</option>
+                <option value="600">600</option>
+                <option value="700">700</option>
+                <option value="900">900</option>
+            </select>
+        </div>
+        <div id="훈민정음">
+            <p>世<span>솅〮</span>宗<span>조ᇰ</span>御<span>ᅌᅥᆼ〮</span>製<span>졩〮</span>訓<span>훈〮</span>民<span>민</span>正<span>져ᇰ〮</span>音<span>ᅙᅳᆷ</span></p>
+            <p>나랏〮말〯ᄊᆞ미</p>
+            <p>中<span>듀ᇰ〮</span>國<span>귁〮</span>에〮달아</p>
+            <p>文<span>문</span>字<span>ᄍᆞᆼ</span>와〮로〮서르ᄉᆞᄆᆞᆺ디〮아니〮ᄒᆞᆯᄊᆡ</p>
+            <p>이런젼ᄎᆞ로어린百<span>ᄇᆡᆨ</span>姓<span>셔ᇰ</span>이니르고</p>
+            <p>져호ᇙ〮배〮이셔도</p>
+            <p>ᄆᆞᄎᆞᆷ〮내〯제ᄠᅳ〮들〮시러〮펴디〮몯〯ᄒᆞᇙ노〮미〮하</p>
+            <p>니〮라〮</p>
+            <p>내〮이〮ᄅᆞᆯ〮爲<span>윙</span>ᄒᆞ〮야〮어〯엿비〮너겨</p>
+            <p>새〮로〮스〮믈〮여듧〮字<span>ᄍᆞᆼ</span>ᄅᆞᆯ〮ᄆᆡᇰᄀᆞ〮노니</p>
+            <p>사〯ᄅᆞᆷ마〯다〮ᄒᆞ〯ᅇᅧ〮수〯ᄫᅵ〮니겨〮날〮로〮ᄡᅮ〮메〮便</p>
+            <p><span>뼌</span>安<span>ᅙᅡᆫ</span>킈〮ᄒᆞ고〮져〮ᄒᆞᇙᄯᆞᄅᆞ미〮니라</p>
+        </div>
+    </div>
+</body>
