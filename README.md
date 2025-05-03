@@ -17,22 +17,22 @@
 ※ jsdelivr에서 내려받을 수 있는 한 파일의 한계 용량은 20MB로, `Noto Serif CJKkr`의 경우 모든 oft 파일이 20MB를 초과할 뿐 아니라 `NotoSerifCJKkr-Bold.woff`(*font-weight* = 700) 파일 또한 20MB를 넘으므로, woff2 형식을 지원하지 않는 Internet Explorer에서 사용이 제한된다.
 - HTML
 ```
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/sleeprince/noto-cjk@main/notoCJKkr.min.css" />
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/sleeprince/noto-cjk@v1.1/notoCJKkr.min.css" />
 ```
 - CSS
 ```
-@import url("https://cdn.jsdelivr.net/gh/sleeprince/noto-cjk@main/notoCJKkr.min.css");
+@import url("https://cdn.jsdelivr.net/gh/sleeprince/noto-cjk@v1.1/notoCJKkr.min.css");
 ```
 
 ### statically CDN
 ※ statically에서 내려받을 수 있는 한 파일의 한계 용량은 30MB로, 용량이 가장 큰 oft 파일까지 모두 30MB 미만이므로 모든 환경에서 쓸 수 있다.
 - HTML
 ```
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.statically.io/gh/sleeprince/noto-cjk/v1.0/notoCJKkr.css" />
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.statically.io/gh/sleeprince/noto-cjk/v1.1/notoCJKkr.css" />
 ```
 - CSS
 ```
-@import url('https://cdn.statically.io/gh/sleeprince/noto-cjk/v1.0/notoCJKkr.css');
+@import url('https://cdn.statically.io/gh/sleeprince/noto-cjk/v1.1/notoCJKkr.css');
 ```
 ## 보기
 ### ✔️ 본고딕 Noto Sans CJK-kr
