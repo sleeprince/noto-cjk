@@ -14,7 +14,7 @@
 ## 사용법
 - 아래의 코드로써 본고딕(바탕체, Noto Sans)과 본명조(돋움체, Noto Serif)를 가져다 쓸 수 있으며, *family-name*은 `Noto Sans CJK-kr`과 `Noto Serif CJK-kr`이다.
 ### jsdelivr CDN
-※ jsdelivr에서 내려받을 수 있는 한 파일의 한계 용량은 20MB로, `Noto Serif CJKkr`의 경우 모든 oft 파일이 20MB를 초과할 뿐 아니라 `Noto Serif CJKkr-Bold.woff`(*font-weight* = 700) 파일 또한 20MB를 넘으므로, woff2 형식을 지원하지 않는 Internet Explorer에서 사용이 제한된다.
+※ jsdelivr에서 내려받을 수 있는 한 파일의 한계 용량은 20MB로, `Noto Serif CJKkr`의 경우 모든 oft 파일이 20MB를 초과할 뿐 아니라 `NotoSerifCJKkr-Bold.woff`(*font-weight* = 700) 파일 또한 20MB를 넘으므로, woff2 형식을 지원하지 않는 Internet Explorer에서 사용이 제한된다.
 - HTML
 ```
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/sleeprince/noto-cjk@main/notoCJKkr.min.css" />
@@ -35,7 +35,7 @@
 @import url('https://cdn.statically.io/gh/sleeprince/noto-cjk/v1.0/notoCJKkr.css');
 ```
 ## 보기
-### ✔️ 본고딕 Noto Sans CJK kr
+### ✔️ 본고딕 Noto Sans CJK-kr
 ![NotoSansCJKkr](https://github.com/user-attachments/assets/fb79c35a-0e80-4197-8317-dad43ad98d2b)
-### ✔️ 본명조 Noto Serif CJK kr
+### ✔️ 본명조 Noto Serif CJK-kr
 ![NotoSerifCJKkr](https://github.com/user-attachments/assets/d8084d78-2252-4d9a-991f-877ff7cd778a)
