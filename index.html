@@ -61,7 +61,13 @@
         #buttons:has(input#sans:checked) option[value="600"]{
             display: none;
         }
+        #buttons:has(input#sans:checked) option[value="200"]{
+            display: none;
+        }
         #buttons:has(input#serif:checked) option[value="100"]{
+            display: none;
+        }
+        #buttons:has(input#serif:checked) option[value="350"]{
             display: none;
         }
         #buttons:has(option[value="100"]:checked) + #훈민정음{
@@ -73,10 +79,16 @@
         #buttons:has(option[value="300"]:checked) + #훈민정음{
             font-weight: 300;
         }
+        #buttons:has(option[value="350"]:checked) + #훈민정음{
+            font-weight: 350;
+        }
         #buttons:has(option[value="400"]:checked) + #훈민정음{
             font-weight: 400;
         }
         #buttons:has(option[value="500"]:checked) + #훈민정음{
+            font-weight: 500;
+        }
+        #buttons:has(option[value="600"]:checked) + #훈민정음{
             font-weight: 600;
         }
         #buttons:has(option[value="700"]:checked) + #훈민정음{
@@ -112,6 +124,7 @@
                 <option value="100">100</option>
                 <option value="200">200</option>
                 <option value="300">300</option>
+                <option value="350">350</option>
                 <option value="400">400</option>
                 <option value="500">500</option>
                 <option value="600">600</option>
